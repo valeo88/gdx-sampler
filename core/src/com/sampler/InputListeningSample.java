@@ -1,9 +1,7 @@
 package com.sampler;
 
 import com.badlogic.gdx.Application;
-import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -11,9 +9,12 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Logger;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.sampler.common.SampleBase;
+import com.sampler.common.SampleInfo;
 import com.sampler.utils.GdxUtils;
 
-public class InputListeningSample implements ApplicationListener, InputProcessor {
+public class InputListeningSample extends SampleBase {
+	public static final SampleInfo SAMPLE_INFO = new SampleInfo(InputListeningSample.class);
 
 	private static final Logger logger = new Logger(InputListeningSample.class.getName(), Logger.DEBUG);
 
