@@ -5,6 +5,7 @@ import com.sampler.GdxModuleInfoSample;
 import com.sampler.GdxReflectionSample;
 import com.sampler.InputListeningSample;
 import com.sampler.InputPollingSample;
+import com.sampler.OrthographicCameraSample;
 
 import java.util.Arrays;
 import java.util.List;
@@ -17,7 +18,8 @@ public class SampleInfos {
             GdxModuleInfoSample.SAMPLE_INFO,
             GdxReflectionSample.SAMPLE_INFO,
             InputListeningSample.SAMPLE_INFO,
-            InputPollingSample.SAMPLE_INFO
+            InputPollingSample.SAMPLE_INFO,
+            OrthographicCameraSample.SAMPLE_INFO
     );
 
     public static List<String> getSampleNames() {
