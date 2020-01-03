@@ -1,6 +1,7 @@
 package com.sampler.common;
 
 import com.sampler.ApplicationListenerSample;
+import com.sampler.GdxGeneratedSample;
 import com.sampler.GdxModuleInfoSample;
 import com.sampler.GdxReflectionSample;
 import com.sampler.InputListeningSample;
@@ -23,7 +24,8 @@ public class SampleInfos {
             InputPollingSample.SAMPLE_INFO,
             OrthographicCameraSample.SAMPLE_INFO,
             ViewportSample.SAMPLE_INFO,
-            SpriteBatchSample.SAMPLE_INFO
+            SpriteBatchSample.SAMPLE_INFO,
+            GdxGeneratedSample.SAMPLE_INFO
     );
 
     public static List<String> getSampleNames() {
