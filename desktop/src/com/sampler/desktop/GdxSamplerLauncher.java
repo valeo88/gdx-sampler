@@ -41,9 +41,17 @@ public class GdxSamplerLauncher extends JFrame {
     }
 
     private void init() {
-        createControlPanel();
-        getContentPane().add(controlPanel, BorderLayout.WEST);
+        // setup window and CP
+        Container container = getContentPane();
+        container.setSize(WIDTH, HEIGHT);
+        setTitle(GdxSamplerLauncher.class.getSimpleName());
+        setMaximumSize(new Dimension(WIDTH, HEIGHT));
+        setMinimumSize(getMaximumSize());
+        setSize(WIDTH, HEIGHT);
+        setResizable(false);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+        // to stop correctly
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -53,11 +61,9 @@ public class GdxSamplerLauncher extends JFrame {
             }
         });
 
-        setTitle(GdxSamplerLauncher.class.getSimpleName());
-        setMaximumSize(new Dimension(WIDTH, HEIGHT));
-        setSize(WIDTH, HEIGHT);
-        setResizable(false);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        // add control panel
+        createControlPanel();
+        container.add(controlPanel, BorderLayout.WEST);
 
         // tell window to resize and layout our components
         pack();
