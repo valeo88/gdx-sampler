@@ -1,6 +1,7 @@
 package com.sampler.common;
 
 import com.sampler.ApplicationListenerSample;
+import com.sampler.BitmapFontSample;
 import com.sampler.GdxGeneratedSample;
 import com.sampler.GdxModuleInfoSample;
 import com.sampler.GdxReflectionSample;
@@ -27,7 +28,8 @@ public class SampleInfos {
             ViewportSample.SAMPLE_INFO,
             SpriteBatchSample.SAMPLE_INFO,
             GdxGeneratedSample.SAMPLE_INFO,
-            ShapeRendererSample.SAMPLE_INFO
+            ShapeRendererSample.SAMPLE_INFO,
+            BitmapFontSample.SAMPLE_INFO
     );
 
     public static List<String> getSampleNames() {
