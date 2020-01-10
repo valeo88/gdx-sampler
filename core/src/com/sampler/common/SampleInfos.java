@@ -8,6 +8,7 @@ import com.sampler.GdxReflectionSample;
 import com.sampler.InputListeningSample;
 import com.sampler.InputPollingSample;
 import com.sampler.OrthographicCameraSample;
+import com.sampler.PoolingSample;
 import com.sampler.ShapeRendererSample;
 import com.sampler.SpriteBatchSample;
 import com.sampler.ViewportSample;
@@ -29,7 +30,8 @@ public class SampleInfos {
             SpriteBatchSample.SAMPLE_INFO,
             GdxGeneratedSample.SAMPLE_INFO,
             ShapeRendererSample.SAMPLE_INFO,
-            BitmapFontSample.SAMPLE_INFO
+            BitmapFontSample.SAMPLE_INFO,
+            PoolingSample.SAMPLE_INFO
     );
 
     public static List<String> getSampleNames() {
