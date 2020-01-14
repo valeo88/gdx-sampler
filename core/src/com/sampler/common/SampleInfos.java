@@ -1,6 +1,7 @@
 package com.sampler.common;
 
 import com.sampler.ApplicationListenerSample;
+import com.sampler.AssetManagerSample;
 import com.sampler.BitmapFontSample;
 import com.sampler.GdxGeneratedSample;
 import com.sampler.GdxModuleInfoSample;
@@ -19,7 +20,7 @@ import java.util.stream.Collectors;
 
 public class SampleInfos {
 
-    public static final List<SampleInfo> ALL = Arrays.asList(
+    private static final List<SampleInfo> ALL = Arrays.asList(
             ApplicationListenerSample.SAMPLE_INFO,
             GdxModuleInfoSample.SAMPLE_INFO,
             GdxReflectionSample.SAMPLE_INFO,
@@ -31,7 +32,8 @@ public class SampleInfos {
             GdxGeneratedSample.SAMPLE_INFO,
             ShapeRendererSample.SAMPLE_INFO,
             BitmapFontSample.SAMPLE_INFO,
-            PoolingSample.SAMPLE_INFO
+            PoolingSample.SAMPLE_INFO,
+            AssetManagerSample.SAMPLE_INFO
     );
 
     public static List<String> getSampleNames() {
