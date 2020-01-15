@@ -12,6 +12,7 @@ import com.sampler.OrthographicCameraSample;
 import com.sampler.PoolingSample;
 import com.sampler.ShapeRendererSample;
 import com.sampler.SpriteBatchSample;
+import com.sampler.TextureAtlasSample;
 import com.sampler.ViewportSample;
 
 import java.util.Arrays;
@@ -33,7 +34,8 @@ public class SampleInfos {
             ShapeRendererSample.SAMPLE_INFO,
             BitmapFontSample.SAMPLE_INFO,
             PoolingSample.SAMPLE_INFO,
-            AssetManagerSample.SAMPLE_INFO
+            AssetManagerSample.SAMPLE_INFO,
+            TextureAtlasSample.SAMPLE_INFO
     );
 
     public static List<String> getSampleNames() {
